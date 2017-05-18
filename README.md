@@ -1,7 +1,7 @@
 # JSBridge
 JSBridge交接与Native通信是Web端调用进行封装,之前一直做移动web开发，项目需要webview+native的混合模式所以需要一些web和native的交互，由于JSBridge Native端作者提供web调用方式太奇怪，也跟web开发代码不耦合，所以我对web调用方式进行封装，针对IOS和Android做了兼容，方便在web开发时进行调用。
 
-#方法添加示例
+# 方法添加示例
 ```
 JSBridge.prototype.getUserInfo = function(data, callback) {
         this._init(function(bridge) {
@@ -19,7 +19,8 @@ JSBridge.prototype.getUserInfo = function(data, callback) {
 这是在JSBridge.js中写的一个方法，当添加新方法的时候只需要在JSBridge.js中提示的位置复制上面代码，
 修改JSBridge.prototype.getUserInfo为 JSBridge.prototype.yourMethod（例如JSBridge.prototype.setTitle等等）
 修改bridge.callHandler的第一个参数（与Native端定义的方法名称）
-#注意事项
+# 注意事项
+
 如果需要修改Native定义的路径，可以在JSBridge.js中JSBridge.prototype._init下
 ```
 WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
