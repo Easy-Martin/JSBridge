@@ -27,7 +27,7 @@ WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
 ```
 JSBridge.prototype._init是初始化方法
 
-JSBridge.prototype.__init__ 这个安卓下必须调用，应该也是初始化的一部分（不懂原生的东西）
+JSBridge.prototype.\__init__ 这个安卓下必须调用，应该也是初始化的一部分（不懂原生的东西）
 
 你也可以在Vue等框架下调用
 ```
