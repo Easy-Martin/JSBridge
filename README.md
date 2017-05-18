@@ -18,7 +18,8 @@ JSBridge.prototype.getUserInfo = function(data, callback) {
 ```
 这是在JSBridge.js中写的一个方法，当添加新方法的时候只需要在JSBridge.js中提示的位置复制上面代码，
 修改JSBridge.prototype.getUserInfo为 JSBridge.prototype.yourMethod（例如JSBridge.prototype.setTitle等等）
-修改bridge.callHandler的第一个参数（与Native端定义的方法名称）
+修改bridge.callHandler的第一个参数（与Native端定义的方法名称）当然也可以把callHandler改成registerHandler具体可以根据自己的业务需求，不过一般用callHandler(有web工程师主动调用Native方法)
+
 # 注意事项
 
 如果需要修改Native定义的路径，可以在JSBridge.js中JSBridge.prototype._init下
@@ -35,3 +36,7 @@ import JSBridge from './JSBridge';
 var JSBridge = require('./JSBridge')
 ```
 Vue我比较熟悉，可以单独写个插件利用Vue.use挂载到实例上这样在任何组件都能调用
+
+# 参考链接
+[Android JSBridge](https://github.com/lzyzsd/JsBridge) 
+ios相关的我没有找到又找到的可以发给我一下，谢谢，如果文章对你有用可以star一下
