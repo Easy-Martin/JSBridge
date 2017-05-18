@@ -68,6 +68,25 @@
         }.bind(this))
     };
 
+    /**
+     * 根据自己需求添加方法
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
 
     if (typeof module !== 'undefined' && module.exports) {
         module.exports = JSBridge;
