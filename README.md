@@ -35,7 +35,7 @@ JSBridge.prototype.\__init__ 这个安卓下必须调用，应该也是初始化
 import JSBridge from './JSBridge';
 var JSBridge = require('./JSBridge')
 ```
-Vue我比较熟悉，可以单独写个插件利用Vue.use挂载到实例上这样在任何组件都能调用
+Vue我比较熟悉，可以单独写个插件利用Vue.use挂载到实例上这样在任何组件都能调用，我就是这么干的
 
 # 参考链接
 [Android JSBridge](https://github.com/lzyzsd/JsBridge) 
